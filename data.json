@@ -1,0 +1,282 @@
+[
+  {
+    "name": "Toyota Camry",
+    "brand": "Toyota",
+    "price": 25999,
+    "rating": 4.6,
+    "image": "https://i.ibb.co/2F32Bz0/emblem-ogp-001.png",
+    "brandImage": "https://i.ibb.co/2F32Bz0/emblem-ogp-001.png",
+    "description": "The Toyota Camry is a reliable and popular midsize sedan known for its comfortable ride, fuel efficiency, and spacious interior.",
+    "category": "Sedan"
+  },
+  {
+    "name": "Toyota RAV4",
+    "brand": "Toyota",
+    "price": 31999,
+    "rating": 4.7,
+    "image": "https://i.ibb.co/y6YqDkc/download.jpg",
+    "brandImage": "https://i.ibb.co/2F32Bz0/emblem-ogp-001.png",
+    "description": "The Toyota RAV4 is a popular compact SUV known for its versatility, comfortable ride, and strong resale value.",
+    "category": "SUV"
+  },
+  {
+    "name": "Toyota Corolla",
+    "brand": "Toyota",
+    "price": 22999,
+    "rating": 4.4,
+    "image": "https://i.ibb.co/y6YqDkc/download.jpg",
+    "brandImage": "https://i.ibb.co/2F32Bz0/emblem-ogp-001.png",
+    "description": "Description of the Toyota Corolla.",
+    "category": "Compact Car"
+  },
+  {
+    "name": "Toyota Highlander",
+    "brand": "Toyota",
+    "price": 38999,
+    "rating": 4.5,
+    "image": "https://i.ibb.co/2F32Bz0/emblem-ogp-001.png",
+    "brandImage": "https://i.ibb.co/2F32Bz0/emblem-ogp-001.png",
+    "description": "Description of the Toyota Highlander.",
+    "category": "SUV"
+  },
+  {
+    "name": "Ford Mustang GT",
+    "brand": "Ford",
+    "price": 38999,
+    "rating": 4.8,
+    "image": "https://i.ibb.co/KNg5RvN/2017-Ford-Mustang-01b.jpg",
+    "brandImage": "https://i.ibb.co/yVG75cV/Is-C70-W7qo-G8m-NEy-7cv-LJ.jpg",
+    "description": "The Ford Mustang GT is a legendary muscle car with a powerful V8 engine, distinctive styling, and exhilarating performance.",
+    "category": "Sports Car"
+  },
+  {
+    "name": "Ford Explorer",
+    "brand": "Ford",
+    "price": 34999,
+    "rating": 4.6,
+    "image": "https://i.ibb.co/y4Tg3Mc/2021-ford-explorer-4dr-suv-king-ranch-fq-oem-1-1600.jpg",
+    "brandImage": "https://i.ibb.co/yVG75cV/Is-C70-W7qo-G8m-NEy-7cv-LJ.jpg",
+    "description": "The Ford Explorer is a midsize SUV offering spacious seating, a range of features, and the ability to tackle various terrains.",
+    "category": "SUV"
+  },
+  {
+    "name": "Ford Focus",
+    "brand": "Ford",
+    "price": 24999,
+    "rating": 4.3,
+    "image": "https://i.ibb.co/y4Tg3Mc/2021-ford-explorer-4dr-suv-king-ranch-fq-oem-1-1600.jpg",
+    "brandImage": "https://i.ibb.co/yVG75cV/Is-C70-W7qo-G8m-NEy-7cv-LJ.jpg",
+    "description": "Description of the Ford Focus.",
+    "category": "Compact Car"
+  },
+  {
+    "name": "Ford F-150",
+    "brand": "Ford",
+    "price": 42999,
+    "rating": 4.7,
+    "image": "https://i.ibb.co/y4Tg3Mc/2021-ford-explorer-4dr-suv-king-ranch-fq-oem-1-1600.jpg",
+    "brandImage": "https://i.ibb.co/yVG75cV/Is-C70-W7qo-G8m-NEy-7cv-LJ.jpg",
+    "description": "Description of the Ford F-150.",
+    "category": "Truck"
+  },
+  {
+    "name": "BMW 3 Series",
+    "brand": "BMW",
+    "price": 42999,
+    "rating": 4.7,
+    "image": "https://i.ibb.co/0m1GyYn/P90462486-high-Res.jpg",
+    "brandImage": "https://i.ibb.co/px0HVZW/bmw-logo-PNG19707.png",
+    "description": "The BMW 3 Series is a luxury compact sedan known for its sporty handling, premium features, and a strong blend of performance and comfort.",
+    "category": "Luxury Sedan"
+  },
+  {
+    "name": "BMW X5",
+    "brand": "BMW",
+    "price": 49999,
+    "rating": 4.8,
+    "image": "https://i.ibb.co/0m1GyYn/P90462486-high-Res.jpg",
+    "brandImage": "https://i.ibb.co/px0HVZW/bmw-logo-PNG19707.png",
+    "description": "Description of the BMW X5.",
+    "category": "SUV"
+  },
+  {
+    "name": "BMW 7 Series",
+    "brand": "BMW",
+    "price": 69999,
+    "rating": 4.8,
+    "image": "https://i.ibb.co/0m1GyYn/P90462486-high-Res.jpg",
+    "brandImage": "https://i.ibb.co/px0HVZW/bmw-logo-PNG19707.png",
+    "description": "Description of the BMW 7 Series.",
+    "category": "Luxury Sedan"
+  },
+  {
+    "name": "BMW i3",
+    "brand": "BMW",
+    "price": 45999,
+    "rating": 4.5,
+    "image": "https://i.ibb.co/0m1GyYn/P90462486-high-Res.jpg",
+    "brandImage": "https://i.ibb.co/px0HVZW/bmw-logo-PNG19707.png",
+    "description": "Description of the BMW i3.",
+    "category": "Electric Car"
+  },
+  {
+    "name": "Mercedes-Benz E-Class",
+    "brand": "Mercedes-Benz",
+    "price": 48999,
+    "rating": 4.9,
+    "image": "https://i.ibb.co/86XzFMG/1-Mercedes-E-Class.jpg",
+    "brandImage": "https://i.ibb.co/Kym03jy/b2ap3-large-benz.jpg",
+    "description": "The Mercedes-Benz E-Class is a luxury executive sedan with a plush interior, advanced technology, and a smooth, comfortable ride.",
+    "category": "Luxury Sedan"
+  },
+  {
+    "name": "Mercedes-Benz GLC",
+    "brand": "Mercedes-Benz",
+    "price": 53999,
+    "rating": 4.6,
+    "image": "https://i.ibb.co/86XzFMG/1-Mercedes-E-Class.jpg",
+    "brandImage": "https://i.ibb.co/Kym03jy/b2ap3-large-benz.jpg",
+    "description": "Description of the Mercedes-Benz GLC.",
+    "category": "SUV"
+  },
+  {
+    "name": "Mercedes-Benz C-Class",
+    "brand": "Mercedes-Benz",
+    "price": 44999,
+    "rating": 4.7,
+    "image": "https://i.ibb.co/86XzFMG/1-Mercedes-E-Class.jpg",
+    "brandImage": "https://i.ibb.co/Kym03jy/b2ap3-large-benz.jpg",
+    "description": "Description of the Mercedes-Benz C-Class.",
+    "category": "Luxury Sedan"
+  },
+  {
+    "name": "Mercedes-Benz EQS",
+    "brand": "Mercedes-Benz",
+    "price": 64999,
+    "rating": 4.8,
+    "image": "https://i.ibb.co/86XzFMG/1-Mercedes-E-Class.jpg",
+    "brandImage": "https://i.ibb.co/Kym03jy/b2ap3-large-benz.jpg",
+    "description": "Description of the Mercedes-Benz EQS.",
+    "category": "Electric Car"
+  },
+  {
+    "name": "Tesla Model 3",
+    "brand": "Tesla",
+    "price": 49999,
+    "rating": 4.9,
+    "image": "https://i.ibb.co/2KHSbSR/1-Tesla-Model-3.jpg",
+    "brandImage": "https://i.ibb.co/r6kVyHj/c32713346f78f9a11c42c6f00fae1356.png",
+    "description": "The Tesla Model 3 is an electric sedan known for its cutting-edge technology, impressive range, and sustainable, eco-friendly driving.",
+    "category": "Electric Car"
+  },
+  {
+    "name": "Tesla Model X",
+    "brand": "Tesla",
+    "price": 56999,
+    "rating": 4.7,
+    "image": "https://i.ibb.co/2KHSbSR/1-Tesla-Model-3.jpg",
+    "brandImage": "https://i.ibb.co/r6kVyHj/c32713346f78f9a11c42c6f00fae1356.png",
+    "description": "Description of the Tesla Model X.",
+    "category": "Electric SUV"
+  },
+  {
+    "name": "Tesla Model S",
+    "brand": "Tesla",
+    "price": 79999,
+    "rating": 4.9,
+    "image": "https://i.ibb.co/2KHSbSR/1-Tesla-Model-3.jpg",
+    "brandImage": "https://i.ibb.co/r6kVyHj/c32713346f78f9a11c42c6f00fae1356.png",
+    "description": "Description of the Tesla Model S.",
+    "category": "Electric Car"
+  },
+  {
+    "name": "Tesla Model Y",
+    "brand": "Tesla",
+    "price": 52999,
+    "rating": 4,
+    "image": "https://i.ibb.co/5YfMZmn/1-tesla-model-y-2022-road-test-review-tracking.webp",
+    "brandImage": "https://i.ibb.co/r6kVyHj/c32713346f78f9a11c42c6f00fae1356.png",
+    "description": "The Tesla Model Y is an electric compact SUV known for its efficiency, spacious interior, and Tesla's advanced autopilot technology.",
+    "category": "Electric SUV"
+  },
+  {
+    "name": "Honda Civic",
+    "brand": "Honda",
+    "price": 23999,
+    "rating": 4.5,
+    "image": "https://i.ibb.co/p0SZ9Rw/img-7295-10-1666813703.jpg",
+    "brandImage": "https://i.ibb.co/b6vkZb8/s1-12.png",
+    "description": "The Honda Civic is a compact car valued for its reliability, efficient fuel economy, and practical design.",
+    "category": "Compact Car"
+  },
+  {
+    "name": "Honda CR-V",
+    "brand": "Honda",
+    "price": 30999,
+    "rating": 4.6,
+    "image": "https://i.ibb.co/p0SZ9Rw/img-7295-10-1666813703.jpg",
+    "brandImage": "https://i.ibb.co/b6vkZb8/s1-12.png",
+    "description": "Description of the Honda CR-V.",
+    "category": "SUV"
+  },
+  {
+    "name": "Honda Fit",
+    "brand": "Honda",
+    "price": 19999,
+    "rating": 4.2,
+    "image": "https://i.ibb.co/p0SZ9Rw/img-7295-10-1666813703.jpg",
+    "brandImage": "https://i.ibb.co/b6vkZb8/s1-12.png",
+    "description": "Description of the Honda Fit.",
+    "category": "Compact Car"
+  },
+  {
+    "name": "Honda Pilot",
+    "brand": "Honda",
+    "price": 35999,
+    "rating": 4.7,
+    "image": "https://i.ibb.co/p0SZ9Rw/img-7295-10-1666813703.jpg",
+    "brandImage": "https://i.ibb.co/b6vkZb8/s1-12.png",
+    "description": "Description of the Honda Pilot.",
+    "category": "SUV"
+  },
+  {
+    "name": "Nissan Altima",
+    "brand": "Nissan",
+    "price": 26999,
+    "rating": 4.4,
+    "image": "https://i.ibb.co/YN1pNQM/Kicks-Model-Image.jpg",
+    "brandImage": "https://i.ibb.co/z6HNkxZ/preview-928x522.jpg",
+    "description": "Description of the Nissan Altima.",
+    "category": "Sedan"
+  },
+  {
+    "name": "Nissan Rogue",
+    "brand": "Nissan",
+    "price": 28999,
+    "rating": 4.5,
+    "image": "https://i.ibb.co/R0KvSLc/magnite3-360x240.jpg",
+    "brandImage": "https://i.ibb.co/z6HNkxZ/preview-928x522.jpg",
+    "description": "Description of the Nissan Rogue.",
+    "category": "SUV"
+  },
+  {
+    "name": "Nissan Sentra",
+    "brand": "Nissan",
+    "price": 19999,
+    "rating": 4.3,
+    "image": "https://i.ibb.co/YN1pNQM/Kicks-Model-Image.jpg",
+    "brandImage": "https://i.ibb.co/z6HNkxZ/preview-928x522.jpg",
+    "description": "Description of the Nissan Sentra.",
+    "category": "Compact Car"
+  },
+  {
+    "name": "Nissan Titan",
+    "brand": "Nissan",
+    "price": 35999,
+    "rating": 4.6,
+    "image": "https://i.ibb.co/R0KvSLc/magnite3-360x240.jpg",
+    "brandImage": "https://i.ibb.co/z6HNkxZ/preview-928x522.jpg",
+    "description": "Description of the Nissan Titan.",
+    "category": "Truck"
+  }
+]
