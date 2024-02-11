@@ -2,15 +2,23 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const data = require("./data.json");
+var jwt = require("jsonwebtoken");
+
+var cookieParser = require("cookie-parser");
+require("dotenv").config();
 const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 const port = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(
+  cors({
+    origin: ["http://localhost:5173"],
+    credentials: true,
+  })
+);
 app.use(express.json());
-
+app.use(cookieParser());
 const uri =
-  "mongodb+srv://carHunt:KhZ9o6GaQDe0M8Lh@cluster0.knrtjno.mongodb.net/?retryWrites=true&w=majority";
-
+  "mongodb+srv://carHunt:JLsBFaGFWOOegBI7@cluster0.knrtjno.mongodb.net/?retryWrites=true&w=majority";
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
   serverApi: {
@@ -28,16 +36,35 @@ async function run() {
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
 
+    // auth realted api
+    app.post("/jwt", async (req, res) => {
+      const user = req.body;
+      console.log(user);
+      const token = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, {
+        expiresIn: "1h",
+      });
+
+      res
+        .cookie("token", token, {
+          httpOnly: true,
+          secure: true,
+          sameSite: "none",
+        })
+        .send({ success: true });
+    });
+    app.get("/cars", async (req, res) => {
+      let query = {};
+      if (req.query?.userEmail) {
+        query = { userEmail: req.query.userEmail };
+      }
+      const result = await carCollection.find(query).toArray();
+      res.send(result);
+    });
+
     app.post("/cars", async (req, res) => {
       const newCar = req.body;
       // console.log(newCar)
       const result = await carCollection.insertOne(newCar);
-      res.send(result);
-    });
-
-    app.get("/cars", async (req, res) => {
-      const cursor = carCollection.find();
-      const result = await cursor.toArray();
       res.send(result);
     });
 
@@ -50,14 +77,14 @@ async function run() {
       res.send(result);
     });
 
-    app.get("cars/:id", async (req, res) => {
-      const id = req.params.id;
-      const query = {
-        _id: new ObjectId(id),
-      };
-      const result = await carCollection.findOne(query);
-      res.send(result);
-    });
+    // app.get("cars/:id", async (req, res) => {
+    //   const id = req.params.id;
+    //   const query = {
+    //     _id: new ObjectId(id),
+    //   };
+    //   const result = await carCollection.findOne(query);
+    //   res.send(result);
+    // });
 
     app.delete("/cars/:id", async (req, res) => {
       const id = req.params.id;
@@ -90,22 +117,26 @@ async function run() {
     });
 
     app.post("/cart", async (req, res) => {
-      const {_id , ...cart} = req.body;
+      const { _id, ...cart } = req.body;
       const result = await cartCollection.insertOne(cart);
       res.send(result);
     });
 
     app.get("/cart", async (req, res) => {
-      const cursor = cartCollection.find();
-      const result = await cursor.toArray();
+      console.log("TOK TOK TOK", req.cookies.token);
+      console.log(req.query.userEmail);
+      let query = {};
+      if (req.query?.userEmail) {
+        query = { userEmail: req.query.userEmail };
+      }
+      const result = await cartCollection.find(query).toArray();
       res.send(result);
     });
-
 
     app.delete("/cart/:id", async (req, res) => {
       const id = req.params.id;
       const query = {
-        _id: new ObjectId(id)
+        _id: new ObjectId(id),
       };
       const result = await cartCollection.deleteOne(query);
       res.send(result);
@@ -120,7 +151,6 @@ async function run() {
         data.filter((car) => car.brand.toLocaleLowerCase() === brand) || {};
       res.send(result);
     });
-    
 
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
